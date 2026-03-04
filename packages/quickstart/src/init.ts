@@ -284,7 +284,6 @@ const DEMO_PAGE_TSX = `// app/brinpage/page.tsx (or src/app/brinpage/page.tsx)
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { ArrowUp } from "lucide-react";
 import { Inter } from "next/font/google";
 
 const inter = Inter({
@@ -399,14 +398,14 @@ export default function Page() {
                 onClick={send}
                 disabled={!input.trim() || loading}
                 className={[
-                  "grid h-9 w-9 place-items-center rounded-full transition",
+                  "grid px-4 py-2 place-items-center text-sm  rounded-full transition",
                   input.trim() && !loading
                     ? "bg-[#ff7a00] text-white hover:opacity-80 cursor-pointer"
                     : "bg-neutral-50 text-neutral-400 cursor-not-allowed border border-black/5",
                 ].join(" ")}
                 aria-label="Send"
               >
-                <ArrowUp className="h-4 w-4" />
+                Send
               </button>
             </div>
           </div>

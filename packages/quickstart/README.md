@@ -32,7 +32,7 @@ All with a single command.
 ## Installation
 
 ```bash
-npm install @brinpage/quickstart
+npx @brinpage/quickstart init
 ```
 
 ## Usage
@@ -40,7 +40,7 @@ npm install @brinpage/quickstart
 Run the initializer from the root of your Next.js project:
 
 ```bash
-npx brinpage-quickstart init
+npx @brinpage/quickstart init
 ```
 
 This will scaffold the following files (if they don’t already exist):
@@ -92,7 +92,7 @@ You should see a minimal chat UI connected to Brinpage Platform.
 ## Flags
 
 ```bash
-npx brinpage-quickstart init --force
+npx @brinpage/quickstart init --force
 ```
 
 --force
